@@ -137,8 +137,10 @@ function checkQuestion() {
         topperGrabber.style.display = "none";
         timerText.textContent = "highscores";
         highscores.style.display = "flex";
-    let node = 
-        highscorers.appendChild
+    let savedscore = document.getElementById("inputPassword2").value
+       localStorage.setItem("inputPassword2", savedscore)
+       console.log(savedscore)
+       highscorers.textContent =  savedscore + "---------" + timer
     
         //create an element with the currentscore content
         //append on any extra content
