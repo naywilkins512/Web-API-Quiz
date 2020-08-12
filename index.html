@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/style.css">
-
-
 </head>
 
 
@@ -24,8 +22,10 @@
 
     <!-- Header -->
 
-    <h1 id="topper">Quiz time</h1>
-    <p id="timerText"></p>
+    <h1 id="topper">Quiz timer</h1>
+    <h1 style="text-align: left; margin: auto;">SCORE</h1>
+    <p id="score-counter" style="text-align: left;"></p>
+    <p id="timerText">30</p>
     <!-- end Header -->
 
 
@@ -35,7 +35,7 @@
         <div class="row justify-content-center mx-auto">
             <div class="jumbotron col-md-8 my-5">
                 <h1 id="questionAsked" class="display-5 text-center mb-5">Questions</h1>
-                <div class="btn-group" style="flex-direction: column;" role="group" aria-label="Basic example">
+                <div id="button-group" class="btn-group" style="flex: auto; justify-content: center;" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 1</button>
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 2</button>
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 3</button>
@@ -44,7 +44,7 @@
                 </div>
                 <form>
 
-                    <button type="Submit" id="submitter" class="btn btn-primary btn-lg btn-block">Submit</button>
+                    <button type="Submit" id="starter" class="btn btn-primary btn-lg btn-block">Start</button>
                 </form>
 
             </div>
