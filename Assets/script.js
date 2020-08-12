@@ -1,5 +1,6 @@
 
 
+
 let timer = 30
 let questions = [
     {
@@ -31,8 +32,10 @@ let submitButton = document.getElementById("submitter") //move to top when done
 let timerText = document.getElementById("timerText") // move to top
 let questionAsked = document.getElementById("questionAsked") // move to top
 let choiceButtons = document.getElementsByClassName("choice") // move to top later
+// let selectedAnswer = null; // Selected answer
 
 submitButton.addEventListener("click", checkQuestion)
+// choiceButtons[i].addEventListener("click", setSelected);
 
 function startQuiz() {
     interval = setInterval(function() {
@@ -50,12 +53,28 @@ function startQuiz() {
 }
 startQuiz()
 
-function checkQuestion() {
+function checkQuestion() {}
+    // event.preventDefault();
+//     const isCorrect = selectedAnswer.textContent === questions[currentQuestion].answer;
+
+//     if (isCorrect) {
+//         // Add to our score
+
+//         if (currentQuestion === (questions.length - 1)) {
+//             // End the quiz, show the results
+//         } else {
+//             currentQuestion++;
+//             askQuestion();
+//         }
+//     } else {
+//         timer -= 5;
+//     }
+// }
+
     // check answer, if there are more questions: currentquestion++ run askquestion() 
     // else end quiz aka don't increment questions show score stop timer--
     // if right add to score
     // if wrong run question timer-5
-}
 
 
 
