@@ -23,9 +23,9 @@
     <!-- Header -->
 
     <h1 id="topper">Quiz timer</h1>
-    <h1 style="text-align: left; margin: auto;">SCORE</h1>
-    <p id="score-counter" style="text-align: left;"></p>
-    <p id="timerText">30</p>
+    <!-- <h1 style="text-align: left; margin: auto;">SCORE</h1> -->
+    <!-- <p id="score-counter" style="text-align: left;"></p> -->
+    <h1 id="timerText">30</h1>
     <!-- end Header -->
 
 
@@ -34,8 +34,20 @@
     <section class="container my-4">
         <div class="row justify-content-center mx-auto">
             <div class="jumbotron col-md-8 my-5">
-                <h1 id="questionAsked" class="display-5 text-center mb-5">Questions</h1>
-                <div id="button-group" class="btn-group" style="flex: auto; justify-content: center;" role="group" aria-label="Basic example">
+                <h1 id="questionAsked" class="display-5 text-center mb-5 ">Are you ready for the ultimate JS QUIZ?</h1>
+                <form id="initials" class="form-inline" style="display: none;">
+                    <div class="form-group mb-2">
+                      <label for="staticEmail2" class="sr-only">Enter Initials</label>
+                      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="enter your initials">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                      <label for="inputPassword2" class="sr-only">Confirm</label>
+                      <input type="text" class="form-control" id="inputPassword2" placeholder="initials">
+                    </div>
+                    <button id="confirmInitials" type="submit" class="btn btn-primary mb-2">Confirm!</button>
+                  </form>
+                <!-- <input id="initials" style="display: none; text-align: center;" type="enter your initials!"> -->
+                <div id="button-group" class="btn-group" style="flex: auto; justify-content: center; display: none;" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 1</button>
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 2</button>
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 3</button>
@@ -50,6 +62,7 @@
             </div>
         </div>
     </section>
+    <h2 style="text-align: center; color: gray;" id="right-or-wrong">""</h2>
 
     <!-- end form -->
 

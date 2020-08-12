@@ -11,6 +11,9 @@ let choiceButtons = document.getElementsByClassName("choice") // move to top lat
 let selectedAnswer = null; // Selected answer new code
 let scoreCounter = document.getElementById("score-counter") // move to top later new code
 let buttonGrabber = document.getElementById("button-group")
+let topperGrabber = document.getElementById("topper")
+let rightorwrong = document.getElementById("right-or-wrong")
+let initials = document.getElementById("initials")
 
 choiceButtons.hide
 startButton.addEventListener("click", startQuiz)
@@ -47,6 +50,7 @@ let questions = [
 
 function startQuiz() {
     startButton.remove()
+    buttonGrabber.style.display = "flex"
     interval = setInterval(function() {
         
         
@@ -85,19 +89,25 @@ function checkQuestion() {
     let isCorrect = event.target.textContent === questions[currentQuestion].answer;
 
     if (isCorrect) {
-        score +=10
-          scoreCounter.textContent = score
+        rightorwrong.textContent = "CORRECT!"
         }  else {
+            rightorwrong.textContent = "WRONG! YOU WASTED SO MUCH MONEY ON THIS COURSE WHAT ARE YOU DOING WITH YOUR LIFE?"
           timer -= 5
           timerText.textContent = timer
         }
-      
+            
         currentQuestion++;
 
         if (currentQuestion >= questions.length) {
+            clearInterval(interval)
+        // need to add clearInterval() to stop timer
            questionAsked.style.display = "none"
            buttonGrabber.style.display = "none"
-           //stop timer
+           rightorwrong.style.display = "none"
+           topperGrabber.textContent = "YOUR SCORE IS:"
+           initials.style.display = "flex"
+
+           //stop timer//done
            //create element showing current score // maybe display: block
            // make input text for persons initials with a submit button
            //add event listener to submit button that {
