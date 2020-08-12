@@ -44,7 +44,7 @@
                       <label for="inputPassword2" class="sr-only">Confirm</label>
                       <input type="text" class="form-control" id="inputPassword2" placeholder="initials">
                     </div>
-                    <button id="confirmInitials" type="submit" class="btn btn-primary mb-2">Confirm!</button>
+                    <button id="confirmInitials" type="button" class="btn btn-primary mb-2">Confirm!</button>
                   </form>
                 <!-- <input id="initials" style="display: none; text-align: center;" type="enter your initials!"> -->
                 <div id="button-group" class="btn-group" style="flex: auto; justify-content: center; display: none;" role="group" aria-label="Basic example">
@@ -54,6 +54,11 @@
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 4</button>
 
                 </div>
+                <div id="highscores" style="display: none; justify-content: center;">
+                <ul id="highscorers"></ul>
+                <button type="button" id="redo-quiz">Redo Quiz</button>
+                <button type="button" id="clear-highscores">clear highscores</button>
+                </div>
                 <form>
 
                     <button type="Submit" id="starter" class="btn btn-primary btn-lg btn-block">Start</button>
@@ -62,7 +67,7 @@
             </div>
         </div>
     </section>
-    <h2 style="text-align: center; color: gray;" id="right-or-wrong">""</h2>
+    <h2 style="text-align: center; color: gray;" id="right-or-wrong"></h2>
 
     <!-- end form -->
 

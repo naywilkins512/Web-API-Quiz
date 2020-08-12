@@ -14,6 +14,16 @@ let buttonGrabber = document.getElementById("button-group")
 let topperGrabber = document.getElementById("topper")
 let rightorwrong = document.getElementById("right-or-wrong")
 let initials = document.getElementById("initials")
+let highscores = document.getElementById("highscores")
+let highscorers = document.getElementById("highscorers")
+
+let confirmInitials = document.getElementById("confirmInitials").addEventListener("click", function(event){
+    event.preventDefault()
+    scoreboard()
+});
+
+document.getElementById("redo-quiz").addEventListener("click", redoQuiz);
+document.getElementById("clear-highscores").addEventListener("click", clearHighscores);
 
 choiceButtons.hide
 startButton.addEventListener("click", startQuiz)
@@ -91,7 +101,7 @@ function checkQuestion() {
     if (isCorrect) {
         rightorwrong.textContent = "CORRECT!"
         }  else {
-            rightorwrong.textContent = "WRONG! YOU WASTED SO MUCH MONEY ON THIS COURSE WHAT ARE YOU DOING WITH YOUR LIFE?"
+            rightorwrong.textContent = "WRONG!"
           timer -= 5
           timerText.textContent = timer
         }
@@ -122,10 +132,26 @@ function checkQuestion() {
          } 
     }
 
+    function scoreboard() {
+        initials.style.display = "none";
+        topperGrabber.style.display = "none";
+        timerText.textContent = "highscores";
+        highscores.style.display = "flex";
+    let node = 
+        highscorers.appendChild
+    
+        //create an element with the currentscore content
+        //append on any extra content
 
+    }  
 
+    function clearHighscores() {
+        //use .remove to remove all elements
+    }
 
-
+    function redoQuiz() {
+        location.reload();
+    }
 
         //make score element with id
         // grab score element by id
