@@ -3,7 +3,7 @@ let timer = 30
 let currentQuestion = 0 
 let interval = 0
 let score = 0 //new code
-
+localStorage.getItem("inputPassword2")
 let startButton = document.getElementById("starter") //move to top when done
 let timerText = document.getElementById("timerText") // move to top
 let questionAsked = document.getElementById("questionAsked") // move to top
@@ -16,6 +16,7 @@ let rightorwrong = document.getElementById("right-or-wrong")
 let initials = document.getElementById("initials")
 let highscores = document.getElementById("highscores")
 let highscorers = document.getElementById("highscorers")
+let savedscoreArr = [""]
 
 let confirmInitials = document.getElementById("confirmInitials").addEventListener("click", function(event){
     event.preventDefault()
@@ -139,9 +140,11 @@ function checkQuestion() {
         highscores.style.display = "flex";
     let savedscore = document.getElementById("inputPassword2").value
     let savedscoreArr = [""]
-       localStorage.setItem("inputPassword2", savedscoreArr)
-       savedscore.push(savedscoreArr)
-    //    console.log(savedscore)
+    savedscoreArr.push(savedscore)
+    let scoresaver = JSON.stringify(savedscoreArr)
+           localStorage.setItem("inputPassword2", scoresaver)
+           
+       console.log(savedscoreArr)
 
     for (let i = 0; i < savedscoreArr.length; i++) {
        highscorers.textContent =  savedscoreArr[i] + "---------" + timer
