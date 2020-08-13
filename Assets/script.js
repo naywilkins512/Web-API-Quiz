@@ -110,7 +110,7 @@ function checkQuestion() {
 
         if (currentQuestion >= questions.length) {
             clearInterval(interval)
-        // need to add clearInterval() to stop timer
+
            questionAsked.style.display = "none"
            buttonGrabber.style.display = "none"
            rightorwrong.style.display = "none"
@@ -138,10 +138,13 @@ function checkQuestion() {
         timerText.textContent = "highscores";
         highscores.style.display = "flex";
     let savedscore = document.getElementById("inputPassword2").value
-       localStorage.setItem("inputPassword2", savedscore)
-       console.log(savedscore)
-       highscorers.textContent =  savedscore + "---------" + timer
-    
+    let savedscoreArr = []
+       localStorage.setItem("inputPassword2", savedscoreArr)
+    //    console.log(savedscore)
+
+    for (let i = 0; i < savedscoreArr.length; i++) {
+       highscorers.textContent =  savedscoreArr[i] + "---------" + timer
+    }
         //create an element with the currentscore content
         //append on any extra content
 
