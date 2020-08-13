@@ -138,8 +138,9 @@ function checkQuestion() {
         timerText.textContent = "highscores";
         highscores.style.display = "flex";
     let savedscore = document.getElementById("inputPassword2").value
-    let savedscoreArr = []
+    let savedscoreArr = [""]
        localStorage.setItem("inputPassword2", savedscoreArr)
+       savedscore.push(savedscoreArr)
     //    console.log(savedscore)
 
     for (let i = 0; i < savedscoreArr.length; i++) {
