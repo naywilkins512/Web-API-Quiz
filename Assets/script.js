@@ -8,7 +8,6 @@ let startButton = document.getElementById("starter");
 let timerText = document.getElementById("timerText"); 
 let questionAsked = document.getElementById("questionAsked"); 
 let choiceButtons = document.getElementsByClassName("choice"); 
-let selectedAnswer = null; 
 let scoreCounter = document.getElementById("score-counter"); 
 let buttonGrabber = document.getElementById("button-group");
 let topperGrabber = document.getElementById("topper");
@@ -127,7 +126,7 @@ function checkQuestion() {
 function scoreboard() {
     initials.style.display = "none";
     topperGrabber.style.display = "none";
-    timerText.textContent = "highscores";
+    timerText.textContent = "Highscores";
     highscores.style.display = "flex";
     
 

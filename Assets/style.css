@@ -1,12 +1,15 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(177, 202, 248);
 }
 
 
 #topper {
     text-align: center;
+    margin-top: 20px;
 }
 
 #timerText{
     text-align: center;
+    margin-top: 20px;
 }
