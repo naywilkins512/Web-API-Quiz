@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 
-    <title>Nay's Portfolio</title>
+    <title>JAVASCRIPT QUIZ</title>
 
     <!-- css links and google font -->
 
@@ -37,33 +37,43 @@
                 <h1 id="questionAsked" class="display-5 text-center mb-5 ">Are you ready for the ultimate JS QUIZ?</h1>
                 <form id="initials" class="form-inline" style="display: none;">
                     <div class="form-group mb-2">
-                      <label for="staticEmail2" class="sr-only">Enter Initials</label>
-                      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="enter your initials">
+                        <label for="staticEmail2" class="sr-only">Enter Initials</label>
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2"
+                            value="enter your initials">
                     </div>
                     <div class="form-group mx-sm-3 mb-2">
-                      <label for="inputPassword2" class="sr-only">Confirm</label>
-                      <input type="text" class="form-control" id="inputPassword2" placeholder="initials">
+                        <label for="inputPassword2" class="sr-only">Confirm</label>
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="initials">
                     </div>
                     <button id="confirmInitials" type="button" class="btn btn-primary mb-2">Confirm!</button>
-                  </form>
-                <div id="button-group" class="btn-group" style="flex: auto; justify-content: center; display: none;" role="group" aria-label="Basic example">
+
+                </form>
+                <div id="button-group" class="btn-group" style="flex: auto; justify-content: center; display: none;"
+                    role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 1</button>
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 2</button>
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 3</button>
                     <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 4</button>
-
                 </div>
                 <div id="highscores" style="display: none; justify-content: center;">
-                <ul id="highscorers"></ul>
-                <button type="button" id="redo-quiz">Redo Quiz</button>
-                <button type="button" id="clear-highscores">clear highscores</button>
-                </div>
-                <form>
+                    <ul id="highscorers" class="justify-content-center mx-auto"></ul>
+                    <button type="button" id="redo-quiz" class="btn btn-primary btn-sm btn-flex">Redo Quiz</button>
+                    <button type="button" id="clear-highscores" class="btn btn-primary btn-sm btn-flex">Clear
+                        Highscores</button>  
 
+                </div>
+
+                <form>
                     <button type="Submit" id="starter" class="btn btn-primary btn-lg btn-block">Start</button>
                 </form>
 
+
+
             </div>
+
+
+
+        </div>
         </div>
     </section>
     <h2 style="text-align: center; color: gray;" id="right-or-wrong"></h2>
