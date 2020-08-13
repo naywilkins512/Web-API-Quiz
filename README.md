@@ -2,6 +2,9 @@
 
 A timed code quiz with multiple-choice questions. This app runs in the browser, features dynamically updated HTML and CSS powered by JavaScript, including a Scoreboard with local storage. A clean and responsive user interface, ensuring that it adapts to multiple screen sizes.
 
+### Deployed Link
+https://naywilkins512.github.io/Web-API-Quiz/
+
 ## Demo
 The following animation demonstrates the application functionality:
 ![quiz demo](/Assets/java.gif)
