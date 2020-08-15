@@ -24,16 +24,18 @@
 
     <h1 id="topper">Quiz timer</h1>
 
-    <h1 id="timerText">30</h1>
+    <h1 class="border border-dark" id="timerText">30</h1>
     <!-- end Header -->
+    <br>
+    <h4 style="text-align: center; color: black;" id="right-or-wrong">___</h4>
 
 
     <!-- quiz box -->
 
-    <section class="container my-4">
+    <section class="container my-2">
         <div class="row justify-content-center mx-auto">
-            <div class="jumbotron col-md-8 my-5">
-                <h1 id="questionAsked" class="display-5 text-center mb-5 ">Are you ready for the ultimate JavaScript
+            <div class="jumbotron col-md-8 my-3">
+                <h1 id="questionAsked" class="display-5 text-center mb-5 ">Are you ready for the ultimate Web-API
                     QUIZ?</h1>
                 <form id="initials" class="form-inline" style="display: none;">
                     <div class="form-group mb-2">
@@ -45,26 +47,26 @@
                         <label for="inputPassword2" class="sr-only">Confirm</label>
                         <input type="text" class="form-control" id="inputPassword2" placeholder="initials">
                     </div>
-                    <button id="confirmInitials" type="button" class="btn btn-primary mb-2">Confirm!</button>
+                    <button id="confirmInitials" type="button" class="btn btn-info mb-2">Confirm!</button>
 
                 </form>
-                <div id="button-group" class="btn-group" style="flex: auto; justify-content: center; display: none;"
+                <div id="button-group" class="btn-group" style="flex-wrap :wrap; justify-content: center; display: none;"
                     role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 1</button>
-                    <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 2</button>
-                    <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 3</button>
-                    <button type="button" class="btn btn-secondary btn-lg mx-auto choice">Answer 4</button>
+                    <button type="button" class="btn btn-secondary btn-md mx-auto choice">Answer 1</button>
+                    <button type="button" class="btn btn-secondary btn-md mx-auto choice">Answer 2</button>
+                    <button type="button" class="btn btn-secondary btn-md mx-auto choice">Answer 3</button>
+                    <button type="button" class="btn btn-secondary btn-md mx-auto choice">Answer 4</button>
                 </div>
-                <div id="highscores" style="display: none; justify-content: center;">
-                    <ul id="highscorers" class="justify-content-center mx-auto"></ul>
-                    <button type="button" id="redo-quiz" class="btn btn-primary btn-sm btn-flex">Redo Quiz</button>
-                    <button type="button" id="clear-highscores" class="btn btn-primary btn-sm btn-flex">Clear
+                <div id="highscores" style="flex-direction: column; display: none; justify-content: center;">
+                    <ul id="highscorers" class="flex-wrap: wrap; justify-content-center mx-auto"></ul>
+                    <button type="button" id="redo-quiz" class="btn btn-info btn-sm btn-flex">Redo Quiz</button>
+                    <button type="button" id="clear-highscores" class="btn btn-info btn-sm btn-flex">Clear
                         Highscores</button>
 
                 </div>
 
                 <form>
-                    <button type="Submit" id="starter" class="btn btn-primary btn-lg btn-block">Start</button>
+                    <button type="Submit" id="starter" class="btn btn-info btn-lg btn-block">Start</button>
                 </form>
 
             </div>
@@ -72,8 +74,7 @@
         </div>
         </div>
     </section>
-    <h2 style="text-align: center; color: black;" id="right-or-wrong"></h2>
-
+  
 
 
     <!-- footer -->

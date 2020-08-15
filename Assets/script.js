@@ -100,8 +100,10 @@ function checkQuestion() {
 
     if (isCorrect) {
         rightorwrong.textContent = "CORRECT!"
+        rightorwrong.style.color = "lightgreen"
     } else {
         rightorwrong.textContent = "WRONG!"
+        rightorwrong.style.color = "red"
         timer -= 5
         timerText.textContent = timer
     }
